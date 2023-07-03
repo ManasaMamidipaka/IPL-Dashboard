@@ -2,6 +2,8 @@
 import {Component} from 'react'
 import {Link} from 'react-router-dom'
 
+import './index.css'
+
 class TeamCard extends Component {
   render() {
     const {teamData} = this.props

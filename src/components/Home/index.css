@@ -1,7 +1,6 @@
 /* Write your CSS here */
 
 .app-container {
-  background-image: url('https://assets.ccbp.in/frontend/react-js/ipl-dashboard-sm-bg.png');
   background-size: cover;
   height: 100vh;
   display: flex;
@@ -11,16 +10,16 @@
 }
 @media screen and (min-width: 768px) {
   .app-container {
-    background-image: url('https://assets.ccbp.in/frontend/react-js/ipl-dashboard-lg-bg.png');
     justify-content: center;
   }
 }
 .ipl-container {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/ipl-dashboard-sm-bg.png');
+  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 90%;
 }
 @media screen and (min-width: 768px) {
   .ipl-container {
@@ -61,4 +60,5 @@
   flex-wrap: wrap;
   list-style-type: none;
   width: 100%;
+  list-style: none;
 }

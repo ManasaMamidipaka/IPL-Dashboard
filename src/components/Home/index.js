@@ -39,7 +39,7 @@ class Home extends Component {
   }
 
   renderLoader = () => (
-    <div testid="loader" className="loader-container">
+    <div data-testid="loader" className="loader-container">
       <Loader type="Rings" color="#00BFFF" height={50} width={50} />
     </div>
   )
@@ -47,18 +47,17 @@ class Home extends Component {
   render() {
     const {isLoading} = this.state
     return (
-      <div className="app-container">
-        <div className="ipl-container">
-          <div className="header-container">
-            <img
-              src="https://assets.ccbp.in/frontend/react-js/ipl-logo-img.png"
-              alt="ipl logo"
-              className="ipl-logo"
-            />
-            <h1 className="header-heading">IPL Dashboard</h1>
-          </div>
-          {isLoading ? this.renderLoader() : this.renderTeamsList()}
+      <div className="ipl-container">
+        <div className="header-container">
+          <img
+            src="https://assets.ccbp.in/frontend/react-js/ipl-logo-img.png"
+            alt="ipl logo"
+            className="ipl-logo"
+          />
+          <h1 className="header-heading">IPL Dashboard</h1>
         </div>
+
+        {isLoading ? this.renderLoader() : this.renderTeamsList()}
       </div>
     )
   }
